@@ -11,20 +11,16 @@ function NavBar() {
             {/* Navbar container */}
             <div className='navbar'>
                 <div className='left-nav'>
-                    <img src={logo} alt="" /> 
+                    <img src={logo} alt="logo"/> 
                 </div>
-                {/* Right section of the navbar with navigation links */}
                 <div className='right-nav'>
-                    <p><Link to="/">Home</Link></p>
+                    <p><Link to="/FEWD-CA-5">Home</Link></p>
                     <p><Link to="/reg">Register</Link></p>
                 </div>
             </div>
             {/* Routes for handling navigation */}
             <div>
-                <Routes>
-                    <Route path="/" element={<Books/>}></Route>
-                    <Route path="/reg" element={<Forms/>}></Route>
-                </Routes>
+
             </div>
         </>
     );

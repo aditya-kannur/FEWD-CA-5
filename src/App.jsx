@@ -1,19 +1,17 @@
-import { useState } from 'react'
-import './App.css'
-import Forms from './Component/Forms'
-import Books from './Component/Books'
-import NavBar from './Component/NavBar'
-import { BrowserRouter , Route,Routes} from "react-router-dom"
+import "./App.css";
+import NavBar from "./Component/NavBar";
+import { BrowserRouter} from "react-router-dom";
+import AllRoutes from "./AllRoutes";
 
 function App() {
-
   return (
     <>
       <BrowserRouter>
-          <NavBar/>
+        <NavBar />
+        <AllRoutes/>
       </BrowserRouter>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
